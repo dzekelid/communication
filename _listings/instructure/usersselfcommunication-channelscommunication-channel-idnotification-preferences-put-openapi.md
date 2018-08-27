@@ -16,6 +16,24 @@ produces:
 consumes:
 - application/json
 paths:
+  /courses/{course_id}/analytics/users/student_id/communication:
+    get:
+      summary: Get user-in-a-course-level messaging data
+      description: Get user-in-a-course-level messaging data.
+      operationId: get-userinacourselevel-messaging-data
+      x-api-path-slug: coursescourse-idanalyticsusersstudent-idcommunication-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Analytics
+      - Users
+      - Student
+      - Id
+      - Communication
   /users/self/communication_channels/{communication_channel_id}/notification_preferences:
     put:
       summary: Update multiple preferences
